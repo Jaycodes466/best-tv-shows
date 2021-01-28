@@ -4,3 +4,99 @@
   margin: 0;
   padding: 0;
 }
+
+html {
+  font-size: 10px;
+}
+
+body {
+  height: 100vh;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.shows-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85vw;
+}
+
+.shows-container .show {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  -webkit-box-flex: 0.8;
+      -ms-flex: 0.8;
+          flex: 0.8;
+  margin: 1rem;
+  position: relative;
+  -webkit-transition: -webkit-box-flex 0.4s ease-in;
+  transition: -webkit-box-flex 0.4s ease-in;
+  transition: flex 0.4s ease-in;
+  transition: flex 0.4s ease-in, -webkit-box-flex 0.4s ease-in, -ms-flex 0.4s ease-in;
+}
+
+.shows-container .show .shows-title {
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  opacity: 0;
+}
+
+.shows-container .the-sopranos {
+  background-image: url("../img/the-sopranos.jpg");
+}
+
+.shows-container .breaking-bad {
+  background-image: url("../img/breaking-bad.jpg");
+}
+
+.shows-container .the-office {
+  background-image: url("../img/the-office-us.jpg");
+}
+
+.shows-container .band-of-brothers {
+  background-image: url("../img/band-of-brothers.jpg");
+}
+
+.shows-container .peaky-blinders {
+  background-image: url("../img/peaky-blinders.jpg");
+}
+
+.shows-container .better-call-saul {
+  background-image: url("../img/better-call-saul.jpg");
+}
+
+.shows-container .stranger-things {
+  background-image: url("../img/stranger-things.jpg");
+}
+
+.shows-container .justified {
+  background-image: url("../img/justified.jpg");
+}
+
+.shows-container .show.active {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+}
+
+.shows-container .show.active .shows-title {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in 0.4s;
+  transition: opacity 0.3s ease-in 0.4s;
+}

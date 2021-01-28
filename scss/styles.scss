@@ -3,3 +3,88 @@
     margin: 0;
     padding: 0;
 }
+
+html {
+    font-size: 10px
+}
+
+body {
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+}
+
+.shows-container {
+    display: flex;
+    width: 85vw;
+
+    .show {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 90vh;
+        flex: 0.8;
+        margin: 1rem;
+        position: relative;
+        transition: flex 0.4s ease-in;
+
+       
+        .shows-title {
+            font-size: 3rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: 0;
+            opacity: 0;
+        }
+    }
+
+    .the-sopranos {
+        background-image:url('../img/the-sopranos.jpg');
+    }
+
+    .breaking-bad {
+        background-image:url('../img/breaking-bad.jpg');
+    }
+
+    .the-office {
+        background-image:url('../img/the-office-us.jpg');
+    }
+
+    .band-of-brothers {
+        background-image:url('../img/band-of-brothers.jpg');
+    }
+
+    .peaky-blinders {
+        background-image:url('../img/peaky-blinders.jpg');
+    }
+
+    .better-call-saul {
+        background-image:url('../img/better-call-saul.jpg');
+    }
+
+    .stranger-things {
+        background-image:url('../img/stranger-things.jpg');
+    }
+
+    .justified {
+        background-image:url('../img/justified.jpg');
+    }
+
+
+
+
+    .show.active {
+        flex: 6;
+    }
+
+    .show.active .shows-title{
+        opacity: 1;
+        transition: opacity 0.3s ease-in 0.4s;
+    }
+
+}
